@@ -1,0 +1,411 @@
+@font-face {
+    font-family: Mather;
+    src: url(./fonts/MATHER\ LAORDtrial.ttf);
+}
+
+/* Algemene opmaak */
+
+header {
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    border-bottom: solid;
+    border-color: rgb(212, 212, 212);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav img {
+    max-width: 2em;
+    margin: 0.2em;
+}
+
+nav img:last-child {
+    margin-left: 0.6em;
+}
+
+nav a:hover {
+    background-color: rgb(220, 190, 20);
+    zoom: 1.2;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin-left: -2.5em;
+}
+
+img {
+    border-radius: 0.3em;
+}
+
+h1 {
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    font-family: Mather;
+    font-size: 5em;
+    max-width: 10em;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+a {
+    padding: 0.5em;
+    background-color: rgb(212, 212, 212);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 0.5em;
+    border-radius: 1em;
+    text-decoration: none;
+    transition: all 250ms ease
+}
+
+a.active {
+    background-color: crimson;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(212, 212, 212);
+    padding-top: 0.5em;
+    border-radius: 0.2em;
+    padding-bottom: 0.5em;
+}
+
+footer ul {
+    display: flex;
+    flex-flow: column;
+}
+
+footer li {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.2em;
+    background-color: rgb(212, 212, 212);
+    text-align: center;
+}
+
+footer a {
+    padding: 0px;
+}
+
+
+/* Home opmaak */
+
+.home main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: solid;
+    border-color: rgb(212, 212, 212);
+}
+
+.home section:last-child {
+    display: flex;
+    margin-top: 2em;
+    border: none;
+}
+
+.home section:last-child p {
+    display: flex;
+    margin-top: -3em;
+}
+
+.home main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home main div img {
+    max-width: 70vw;
+    max-height: 70vh;
+}
+
+.icoon {
+    max-width: 15em;
+    margin-top: -1em;
+    animation-name: draai;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes draai {
+    
+    50% {transform: rotate(10deg)}
+
+    100% {transform: rotate(0deg)}
+
+}
+
+.home h2 {
+    color: white;
+    text-transform: uppercase;
+    font-family: Mather;
+    font-size: 5em;
+    max-width: 10em;
+    text-align: center;
+    margin-top: -0.5em;
+    -webkit-text-stroke: 2px rgb(51, 51, 51);
+}
+
+.home main a:hover {
+    background-color: rgb(220, 190, 20);
+    zoom: 1.2;
+}
+
+
+.home main p {
+    color: rgb(51, 51, 51);
+    width: 85%;
+    text-align: center;
+}
+
+.home div p {
+    margin-top: 2em;
+}
+
+.home main a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    font-weight: bold;
+    width: 85%;
+}
+
+.home div p {
+    font-style: italic;
+    width: 100%;
+}
+
+
+/* Overzicht opmaak */
+
+.overzicht main {
+ display: flex;
+}
+
+.overzicht h1 {
+    text-align: center;
+}
+
+.overzicht section:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: solid;
+    border-color: rgb(212, 212, 212);
+}
+
+
+.overzicht section.aflevering {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    background-color: rgb(212, 212, 212);
+    border-radius: 0.3em;
+    max-width: 90%;
+    margin-bottom: 1em;
+    transition: all 250ms ease;
+}
+
+.aflevering div {
+    display: flex;
+    flex-direction: row;
+}
+
+.aflevering div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.overzicht section.aflevering:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+section.nieuw {
+    width: 25vw;
+    max-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    background-color: crimson;
+}
+
+.nieuw h2 {
+    width: 10em;
+    font-family: Mather;
+    align-self: center;
+}
+
+.nieuw h3 {
+    text-align: center;
+}
+
+.overzicht h2 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2em;
+}
+
+.aflevering h2 {
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+}
+
+.aflevering img {
+    margin-left: 0.5em;
+    max-width: 9em;
+    max-height: 9em;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+}
+
+.overzicht section section:last-child {
+    margin-bottom: 3em;
+}
+
+.overzicht h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.overzicht p {
+    color: white;
+    font-style: italic; 
+    max-width: 95%;
+    margin-left: 0.5em;
+}
+
+.nieuw h2 {
+    text-align: center;
+}
+
+.nieuw img {
+    max-width: 90%;
+} 
+
+.nieuw p {
+    text-align: center;
+}
+
+/* Over Ons opmaak */
+
+.overons section {
+    padding: 0.5em;
+    background-color: rgb(212, 212, 212);
+    border-radius: 1em;
+    max-width: 18vw;
+    margin: 0.5em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 250ms ease;
+}
+
+.overons section:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.overons h1 {
+    text-align: center;
+    max-width: 100%;
+}
+
+.overons h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.overons div {
+    display: flex;
+    justify-content: center;
+}
+
+.overons main img {
+    max-width: 90%;
+    margin-top: 0.8em;
+}
+
+.overons main p {
+    color: white;
+    max-width: 90%;
+    text-align: center;
+    margin-top: -0.5em;
+}
+
+/* Bronnenlijst opmaak */
+
+.bronnen main {
+    margin-left: 1em;
+}
+
+.bronnen main ul {
+display: flex;
+flex-direction: column;
+}
+
+.bronnen main li {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.bronnen main a {
+    background-color: crimson;
+}
+
+.bronnen h1 {
+    text-align: start;
+}
+
+.bronnen h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+.bronnen main a:hover {
+    background-color: rgb(220, 190, 20);
+    zoom: 1.2;
+}
+
+.bronnen nav a {
+    background-color: rgb(212, 212, 212);
+}
+
+.bronnen nav a:hover {
+    background-color: rgb(220, 190, 20);
+    zoom: 1.2;
+}
